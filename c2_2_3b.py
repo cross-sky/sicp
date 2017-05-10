@@ -1,5 +1,7 @@
 from alice import *
-from operator import add, mul
+from operator import add, mul, truediv
+from ucb import trace
+#@trace
 def accumulate(op, initial, sequence):
 	if len(sequence) < 1:
 		return initial
@@ -18,7 +20,7 @@ def tree_leaf(tree):
 		return []
 	else:
 		return tree_leaf(car(tree)) + tree_leaf(cdr(tree))
-
+#@trace
 def maps(proc, items):
 	if len(items) < 1:
 		return []
