@@ -1,7 +1,7 @@
 from alice import *
 from operator import add, mul, truediv
 from ucb import trace
-@trace
+#@trace
 def accumulate(op, initial, sequence):
 	if len(sequence) < 1:
 		return initial
